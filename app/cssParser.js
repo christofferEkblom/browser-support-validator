@@ -1,3 +1,5 @@
+'use strict'
+
 const cssObj = require('css');
 
 module.exports.getProperties = function(css, options) {
