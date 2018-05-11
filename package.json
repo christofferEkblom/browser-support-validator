@@ -1,0 +1,36 @@
+{
+  "name": "browser-support-validator",
+  "version": "0.1.0",
+  "description": "Check if your application meets your web browser version requirements",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "pre-commit": [
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christofferEkblom/browser-support-validator.git"
+  },
+  "keywords": [
+    "caniuse",
+    "validator"
+  ],
+  "author": "Christoffer Ekblom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christofferEkblom/browser-support-validator/issues"
+  },
+  "homepage": "https://github.com/christofferEkblom/browser-support-validator#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1",
+    "nodemon": "^1.17.4",
+    "pre-commit": "^1.2.2"
+  },
+  "dependencies": {
+    "caniuse-api": "^2.0.0"
+  }
+}
