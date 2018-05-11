@@ -31,6 +31,7 @@
     "pre-commit": "^1.2.2"
   },
   "dependencies": {
-    "caniuse-api": "^2.0.0"
+    "caniuse-api": "^2.0.0",
+    "css": "^2.2.3"
   }
 }
