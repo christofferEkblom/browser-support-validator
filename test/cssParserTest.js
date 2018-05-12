@@ -1,20 +1,7 @@
 const chai = require('chai')
 const sut = require('../app/cssParser')
 
-let css = '\
-  body {\
-    color: #fff;\
-    background: #000;\
-  }\
-  \
-  div {\
-    display: inline;\
-    position: absolute;\
-    color: #666;\
-    non-existing-property: value;\
-  }\
-'
-
+let css = require('./css').css
 let uniqueProperties = 5
 let propertiesTotal = 6
 let assert = chai.assert
