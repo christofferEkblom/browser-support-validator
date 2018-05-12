@@ -20,12 +20,12 @@ let propertiesTotal = 6
 let assert = chai.assert
 
 describe('cssParser getProperties', () => {
-  it('length should be 6 when duplicates is allowed', function() {
+  it('length should be 6 when duplicates are allowed', function() {
     let properties = sut.getProperties(css, {allowDuplicates: true})
     assert.equal(properties.length, propertiesTotal)
   })
 
-  it('length should be 5 when duplicates is disallowed', function() {
+  it('length should be 5 when duplicates are disallowed', function() {
     let properties = sut.getProperties(css, {allowDuplicates: false})
     assert.equal(properties.length, uniqueProperties)
   })
