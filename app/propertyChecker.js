@@ -2,6 +2,12 @@
 
 const canIUse = require('caniuse-api')
 
+/**
+  * @brief  get all compatibility warnings
+  * @param properties: an array of css properties
+  * @param browsers: an array of browsers
+  * @return array of warnings
+*/
 module.exports.getWarnings = function(properties, browsers) {
   let warnings = []
   

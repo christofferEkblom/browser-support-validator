@@ -2,6 +2,12 @@
 
 const cssObj = require('css')
 
+/**
+  * @brief  get all properties from a css string
+  * @param  css: a css string
+  * @param  options: { allowDuplicates: true | false }
+  * @return array of properties
+*/
 module.exports.getProperties = function(css, options) {
   let properties = []
 
