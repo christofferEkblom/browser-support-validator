@@ -4,7 +4,7 @@
   "description": "Check if your application meets your web browser version requirements",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "nodemon ./src/index.js",
     "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "pre-commit": [

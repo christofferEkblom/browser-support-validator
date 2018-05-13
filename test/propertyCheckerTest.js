@@ -1,8 +1,8 @@
 const chai = require('chai')
-const sut = require('../app/propertyChecker')
+const sut = require('../src/utils/propertyChecker')
 
-let browsers = require('./browsers').browsers
-let properties = require('./properties').properties
+let browsers = require('./test data/browsers').browsers
+let properties = require('./test data/properties').properties
 let assert = chai.assert
 
 describe('canIUse getWarnings', () => {

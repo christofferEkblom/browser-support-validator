@@ -1,7 +1,7 @@
 const chai = require('chai')
-const sut = require('../app/cssParser')
+const sut = require('../src/utils/cssParser')
 
-let css = require('./css').css
+let css = require('./test data/css').css
 let uniqueProperties = 5
 let propertiesTotal = 6
 let assert = chai.assert
