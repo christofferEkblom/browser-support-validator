@@ -1,5 +1,5 @@
 const chai = require('chai')
-const sut = require('../src/utils/propertyChecker')
+const sut = require('../src/utils/cssPropertyChecker')
 
 let browsers = require('./test data/browsers').browsers
 let properties = require('./test data/properties').properties
