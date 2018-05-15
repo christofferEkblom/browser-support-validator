@@ -1,14 +1,15 @@
 const chai = require('chai')
 const sut = require('../src/utils/fileSystemReader')
+let testData = require('./test data/testData')
 let assert = chai.assert
 
 describe('fileSystemReader readDirectoryContents', () => {
   it('should read css files data from a given directory including sub directories and return it as an array', done => {
-    check('css', require('./test data/css').css2, done)
+    check('css', testData.css2, done)
   })
 
   it('should read js files data from a given directory including sub directories and return it as an array', done => {
-    check('js', require('./test data/js').js, done)
+    check('js', testData.js, done)
   })
 })
 
