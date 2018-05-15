@@ -6,7 +6,7 @@ let properties = require('./test data/properties').properties
 let assert = chai.assert
 
 describe('canIUse getWarnings', () => {
-  it('should get warnings correctly', function() {
+  it('should get warnings correctly', function () {
     let expected = []
 
     expected.push({ property: 'border-radius', browser: 'safari 3.1' })
@@ -16,7 +16,7 @@ describe('canIUse getWarnings', () => {
 
     let actual = sut.getWarnings(properties, browsers)
 
-    for(let i = 0; i < expected.length; i++) {
+    for (let i = 0; i < expected.length; i++) {
       assert.equal(expected[i]['property'], actual[i]['property'])
       assert.equal(expected[i]['browser'], actual[i]['browser'])
     }

@@ -1,5 +1,5 @@
 module.exports = {
-  properties : [
+  properties: [
     'border-radius', 'border-image', 'color'
   ]
 }

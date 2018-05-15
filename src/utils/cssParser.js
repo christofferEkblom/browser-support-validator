@@ -8,7 +8,7 @@ const cssObj = require('css')
   * @param  options: { allowDuplicates: true | false }
   * @return array of properties
 */
-module.exports.getProperties = function(css, options) {
+module.exports.getProperties = function (css, options) {
   let properties = []
 
   cssObj.parse(css)['stylesheet']['rules'].forEach((rule) => {
@@ -17,11 +17,11 @@ module.exports.getProperties = function(css, options) {
       let optionsIsSet = typeof options !== 'undefined'
       let propertyIsUnique = properties.indexOf(property) === -1
 
-      if(optionsIsSet && options['allowDuplicates'] || propertyIsUnique) {
+      if (optionsIsSet && options['allowDuplicates'] || propertyIsUnique) {
         properties.push(property)
       }
     })
   })
-  
+
   return properties
 }

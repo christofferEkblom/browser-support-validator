@@ -1,5 +1,5 @@
 module.exports = {
-  css : '\
+  css: '\
     body {\
       color: #fff;\
       background: #000;\
