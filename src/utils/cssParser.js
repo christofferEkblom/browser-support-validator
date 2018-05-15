@@ -1,6 +1,7 @@
 'use strict'
 
 const cssObj = require('css')
+const stripCssComments = require('strip-css-comments')
 
 /**
   * @brief  get all properties from a css string
@@ -10,8 +11,7 @@ const cssObj = require('css')
 */
 module.exports.getProperties = function (css, options) {
   let properties = []
-
-  cssObj.parse(css)['stylesheet']['rules'].forEach((rule) => {
+  cssObj.parse(stripCssComments(css))['stylesheet']['rules'].forEach((rule) => {
     rule['declarations'].forEach((declaration) => {
       let property = declaration['property']
       let optionsIsSet = typeof options !== 'undefined'

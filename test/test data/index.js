@@ -5,6 +5,7 @@ module.exports = {
   ],
 
   css: '\
+    /* should handle comments */ \
     body {\
       color: #fff;\
       background: #000;\
