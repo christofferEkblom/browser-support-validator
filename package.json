@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "caniuse-api": "^2.0.0",
-    "css": "^2.2.3"
+    "css": "^2.2.3",
+    "filehound": "^1.16.3"
   }
 }
