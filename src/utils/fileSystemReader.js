@@ -3,6 +3,12 @@
 const filehound = require('filehound')
 const fs = require('fs')
 
+/**
+  * @brief fetch content from one or multiple files with specific extension(s) and return it as an array
+  * @param fileExtension: file extension(s) to include (e.g. ['css', 'js'] or 'css')
+  * @param path: directory to look for
+  * @return array of file contents (promises)
+*/
 function readDirectoryContents(fileExtension, path) {
   let fileContents = []
 
