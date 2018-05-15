@@ -6,6 +6,10 @@ describe('fileSystemReader readDirectoryContents', () => {
   it('should read css files data from a given directory including sub directories and return it as an array', done => {
     check('css', require('./test data/css').css2, done)
   })
+
+  it('should read js files data from a given directory including sub directories and return it as an array', done => {
+    check('js', require('./test data/js').js, done)
+  })
 })
 
 function check(extension, expected, done) {
