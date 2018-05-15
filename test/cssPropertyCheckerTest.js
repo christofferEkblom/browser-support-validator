@@ -1,7 +1,7 @@
 const chai = require('chai')
 const sut = require('../src/utils/cssPropertyChecker')
 
-let testData = require('./test data/testData')
+let testData = require('./test data')
 let browsers = testData.browsers
 let properties = testData.properties
 let assert = chai.assert

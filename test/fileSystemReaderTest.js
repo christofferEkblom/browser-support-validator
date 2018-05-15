@@ -1,6 +1,6 @@
 const chai = require('chai')
 const sut = require('../src/utils/fileSystemReader')
-let testData = require('./test data/testData')
+let testData = require('./test data')
 let assert = chai.assert
 
 describe('fileSystemReader readDirectoryContents', () => {
