@@ -22,6 +22,13 @@ module.exports = {
     '/* css file 2 */\nbody {\n  background: #0f0;\n}\n'
   ],
 
+  css_js: [
+    '/* css file 1 */\nhtml {\n  color: #f00;\n}\n',
+    'function testFile() {\n  let message = \'This code is not intended to be executed\'\n  alert(message);\n}\n',
+    '/* css file 2 */\nbody {\n  background: #0f0;\n}\n',
+    'console.log(\'This file is either not intended to be executed\')\n'
+  ],
+
   properties: [
     'border-radius', 'border-image', 'color'
   ],

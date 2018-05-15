@@ -11,6 +11,10 @@ describe('fileSystemReader readDirectoryContents', () => {
   it('should read js files data from a given directory including sub directories and return it as an array', done => {
     check('js', testData.js, done)
   })
+
+  it('should support multiple file extensions', done => {
+    check(['js', 'css'], testData.css_js, done)
+  })
 })
 
 function check(extension, expected, done) {
